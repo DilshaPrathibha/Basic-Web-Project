@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--For a responsive web design-->
+    <link rel="icon" type="image/png" href="images/Favicon.png"> <!-- Favicon -->
+    <title>Sample Web</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- for add emojis from https://fontawesome.com/ -->
+    <script src="https://kit.fontawesome.com/82e9fa4083.js" crossorigin="anonymous"></script> 
+
+    <style>
+        
+        p{
+            margin-left: 20px;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+        
+        #boxes{
+
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap; /* warping for responsivity (vertical view)*/
+        }
+
+        #headings{
+            text-align: center;
+            width:30%;
+            height: auto;
+            background-color: hsl(209, 89%, 82%);
+            box-shadow: 5px 5px 20px rgb(75, 56, 245), -5px -5px 20px rgb(0, 0, 0);
+
+            float: left; /* headings box comes to right and other texts appearing in left side space */
+            min-width:300px;
+            max-width: 400px;
+            width: 30%;
+            
+            margin-bottom: 20px;
+            margin-top: 50px;
+            /* margin: auto; - to middle */
+            padding: 20px;
+        }
+
+        #txtFormatting{
+            text-align: center;
+            
+            height: auto;
+            background-color: hsl(209, 89%, 82%);
+            box-shadow: 5px 5px 20px rgb(75, 56, 245), -5px -5px 20px rgb(0, 0, 0);
+
+            float:left;
+            min-width: 300px;
+            max-width: 400px;
+            width: 30%;
+
+            margin-left:5%;
+            margin-right:10%;
+            
+            margin-bottom: 20px;
+            margin-top: 50px;
+            padding: 20px;
+        }
+        
+        #para{
+            clear:both; /* to new line */
+        }
+
+        @media screen and (max-width: 832px) { /*adjust for responsive */
+            #headings, #txtFormatting {
+                width: 100%;
+                margin: 20px auto;
+                float: none;
+            }
+
+            
+        }
+
+
+        .email{
+            background-color:hsl(0, 0%, 25%);
+            padding: 15px;
+        }
+
+        .email a{
+            color: hsl(0, 0%, 90%);
+            text-decoration: none;
+        }
+
+        .fa-solid.fa-envelope{ /* modify icon */
+            color:hsl(0, 0%, 90%);
+        }
+
+        .email a:hover{
+            color:  hsl(0, 0%, 100%);
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="Index.html"  title="Main page" class="activeNav"> Main page </a></li>
+            <li><a href="Lyrics.html"  title="To Lyrics"> Lyrics </a></li>
+            <li><a href="table.html"  title="To Table" class="table"> Table </a></li>
+            <li><a href="Button.html"  title="To Button"> Button </a></li>
+            <li><a href="form.html"  title="To form"> Form </a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+
+        <div id="boxes">
+            <div id="headings">
+                <h1>h1 Heading</h1>
+                <h2>h2 Heading</h2>
+                <h3>h3 Heading</h3>
+                <h4>h4 Heading</h4>
+                <h5>h5 Heading</h5>
+                <h6>h6 Heading</h6>
+            </div>
+    
+            <br>
+    
+            <div id="txtFormatting">
+                <p>Normal text</p>
+                <p>b - <b>Bold</b> text</p>
+                <p>i - <i>italic</i> text</p>
+                <p>u - <u>underlined</u> text</p>
+                <p>del - <del>deleted</del>> text</p>
+                <p>big - <big>big</big> text</p>
+                <p>small - <small>small</small> text</p>
+                <p>sub - <sub>subscript</sub> text</p>
+                <p>sup - <sup>superscript</sup> text</p>
+                <p>tt - <tt>monospaced</tt> text</p>
+                <p>mark - <mark>marked</mark> text</p>
+                <p>mark style - <mark style="background-color: aqua;">marked (selected colour with inline CSS)</mark> text</p>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        
+        <div id="para">
+            <!-- Lorem + (Enter or tab) - generate quick text -->
+        <p id="para1" class="clr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolorem earum ipsam voluptatem, necessitatibus soluta dignissimos adipisci nihil similique praesentium illum corporis sapiente minima fuga voluptate quae aliquid, eos magni!</p>
+        <p id="para1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo voluptatum magni fugit itaque, inventore cum iusto eius temporibus est exercitationem animi pariatur mollitia illo, voluptatibus neque optio. Dignissimos, natus nemo.</p>
+        <p id="para1" class="clr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet provident sed dolorum rerum optio facere sapiente enim aut assumenda. Corporis voluptatum quibusdam ratione eveniet delectus fuga autem officiis voluptates quas.</p>
+        <P id="para2">Paragraph tag 2.Paragraph tag 2.Paragraph tag 2.Paragraph tag 2.Paragraph tag 2.Paragraph tag 2.</P>
+        <br> <!-- break tag-->
+        <p>Paragraph after break tag. Paragraph after break. Paragraph after break. Paragraph after break. Paragraph after break.</p>
+        <hr> <!--horizontal rule tag-->
+        </div>
+
+        <pre id="pretag"> <!--preformatted text Tag-->
+            In pre tag
+            preserving spaces,
+            line breaks, 
+            
+            and other whitespace characters are appearing as it showing.
+        </pre>
+
+        <!-- taeget="blank" -   opens with a new tab or window-->
+        <!-- title="" -   shows when mouse pointer comes (shown as a tooltip when the user hovers over the element.) -->
+        <a href="https://www.google.com/" target="_blank" title="Goes to Google">
+            google
+        </a>
+        <br><br> 
+        
+    </main>
+    
+    <footer>
+        <div class="email">
+            <!-- mailto - for add a email address -->
+             <!-- add icon from https://fontawesome.com/-->
+            <small> <a href="mailto:dilshatest@gmail.com" target="_blank" title="Send an email"> <i class="fa-solid fa-envelope"></i>  dilshatest@gmail.com</a></small>
+        </div>
+        
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/Favicon.png">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+      
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="Index.html"  title="To main page"> Main page </a></li>
+            <li><a href="Lyrics.html"  title="To Lyrics"> Lyrics </a></li>
+            <li><a href="table.html"  title="To Table"> Table </a></li>
+            <li><a href="Button.html"  title="To Button"> Button </a></li>
+            <li><a href="form.html"  title="Form" class="activeNav"> Form </a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <!--method="post"
+        method="get"
+    
+         enctype="multipart/form-data"   encryption type for files that selecting in from-->
+    <form action="form.php" method="post" enctype="multipart/form-data">
+
+    <fieldset>
+    <legend> Form </legend>
+        
+        <label for="Username">Username: </label>
+        <input type="text" id="Username" placeholder="Kasun Perera" minlength="6" maxlength="15" required> <br>
+
+        <label for="password">password: </label>
+        <input type="password" id="password" minlength="6" maxlength="15" required> <br>
+        
+        <!--type="email"  sets @ requremwent-->
+        <label for="email">E-mail: </label>
+        <input type="email" id="email" placeholder="abcde123@email.com"> <br>
+
+        <!--patter=""  for set the pattern of phone number-->
+        <label for="phone">Phone: </label>
+        <input type="tel" id="phone" placeholder="077-12-34-567" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}"> <br>
+
+        <!--type="date" -->
+        <label for="bday">Birthday:</label>
+        <input type="date" id="bday"> <br>
+
+        <!-- value="1"  Default value set to 1
+            min="0"  minimum value set to 0
+            minlength="6"  minimum length set to 6
+        -->
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" min="0" max="100" value="1"><br>
+
+        <!-- type="radio"  radio buttons 
+            name="gender   for get only one choise - all inputs adds to the same group (gender group)-->
+        <label for="gender">Gender:</label>
+
+        <label for="male">Male</label>
+        <input type="radio" id="male" value="male" name="gender">
+
+        <label for="female">Female</label>
+        <input type="radio" id="female" value="female" name="gender"><br>
+
+        <!-- <select>   dropdown menu-->
+        <label for="paymwent">Payment:</label>
+        <select>
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="giftcard">Giftcard</option> 
+        </select> <br>
+
+        <!--input type="checkbox"-->
+        <label for="notify">Recive e-mails:</label>
+        <input type="checkbox" id="notify"><br>
+
+        <label for="comment">Comment:</label>
+        <textarea id="comment" rows="3" cols="25">Pre typed text</textarea><br>
+
+        <label for="file">Select an image file:</label>
+        <input type="file" id="file" accept="image/png, image/jpeg"><br>
+
+        <input type="color"><br>
+        <input type="hidden"><br>
+        <input type="numbber"><br>
+        <input type="password"><br>
+        <input type="reset"><br>
+        <input type="search"><br>
+        <input type="url"><br>
+        <input type="week"><br>
+
+        <br><br>
+        <input type="submit">
+        <input type="reset">
+
+    </fieldset>
+    </form>
+    </main>
+
+    <footer>
+        
+    </footer>
+</body>
+</html>

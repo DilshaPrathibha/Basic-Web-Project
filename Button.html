@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/Favicon.png">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        #Agreement{
+            display: flow-root; /* to not sxceed the border */
+            border: 2px solid;
+            height: 200px;
+            overflow:auto;
+            /* overflow:auto;  shows scroll button if needed 
+             overflow:scroll; always show scroll button. but it disables if no need  */
+        }
+    </style>
+    
+
+</head>
+<body>
+        
+    <header>
+    </header>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="Index.html"  title="To main page"> Main page </a></li>
+            <li><a href="Lyrics.html"  title="To Lyrics"> Lyrics </a></li>
+            <li><a href="table.html"  title="To Table"> Table </a></li>
+            <li><a href="Button.html" title="Button" class="activeNav"> Button </a></li>
+            <li><a href="form.html"  title="To form"> Form </a></li>
+        </ul>
+    </nav>
+
+
+    <div>
+        <pre id="Agreement">
+            <b>Software License Agreement</b>
+
+            IMPORTANT: READ THIS AGREEMENT CAREFULLY BEFORE INSTALLING OR USING THIS SOFTWARE.
+
+            By clicking "Accept" or installing or using the software, you agree to be bound by 
+            the terms of this agreement.
+             If you do not agree to these terms, do not install or use the software.
+
+            License Grant
+
+            The software is licensed, not sold. The licensor grants you a non-exclusive, 
+            non-transferable,
+             limited license to install and use the software on one device.
+            Restrictions
+
+            You may not:
+            Copy, modify, or distribute the software.
+            Reverse engineer, decompile, or disassemble the software.
+            Use the software for any illegal purpose.
+            Rent, lease, or lend the software.
+            Ownership
+
+            The licensor retains all rights, title, and interest in and to the software, 
+            including all intellectual property rights. This agreement does not grant you 
+            any ownership rights in the software.
+            Termination
+
+            This license is effective until terminated. Your rights under this license 
+            will terminate automatically without notice from the licensor if you fail 
+            to comply with any terms of this agreement. Upon termination, you must cease
+             all use of the software and destroy all copies of the software.
+            Updates
+
+            The licensor may provide updates or modifications to the software. These 
+            updates are subject to the terms of this agreement unless other terms 
+            accompany the updates.
+            Disclaimer of Warranties
+
+            The software is provided "as is" without warranty of any kind. The
+             licensor disclaims all warranties, whether express, implied, or statutory,
+              including, but not limited to, the implied warranties of merchantability,
+              fitness for a particular purpose, and non-infringement.
+            Limitation of Liability
+
+            In no event shall the licensor be liable for any special, incidental,
+             indirect, or consequential damages whatsoever arising out of the use 
+             of or inability to use the software, even if the licensor has been 
+             advised of the possibility of such damages.
+            Governing Law
+
+            This agreement shall be governed by and construed in accordance with
+             the laws of [Your Jurisdiction], without regard to its conflict of
+              law principles.
+            Entire Agreement
+
+            This agreement constitutes the entire agreement between you and 
+            the licensor and supersedes all prior or contemporaneous 
+            understandings regarding the subject matter hereof.
+        </pre>
+    </div>
+
+    <button onclick="dosomething()"font-size: 25px; background-color:lightgrey; color:darkred; border-radius: 25px;>Button</button>
+    
+    <p id="text">Click the button</p>
+    <script>
+        function dosomething(){
+            document.getElementById("text").innerHTML = "You clicked the button";
+        }
+    </script>
+     
+</body>
+</html>

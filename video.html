@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-image: url(images/Background-img-mountain.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed; /* stop background image scrolling*/ 
+            background-size:cover;
+        }
+
+        #video{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+
+    </style>
+    <!--Adding a favicon-->
+    <!-- (link relationship, type, herf)-->
+    
+    <nav class="navbar">
+        <ul>
+            <li><a href="Index.html"  title="To main page"> Main page </a></li>
+            <li><a href="Lyrics.html" title="Lyrics" class="activeNav"  > Lyrics </a></li>
+            <li><a href="table.html"  title="To Table"> Table </a></li>
+            <li><a href="Button.html"  title="To Button"> Button </a></li>
+            <li><a href="form.html"  title="To form"> Form </a></li>
+        </ul>
+    </nav>
+    <hr>
+    <br>
+
+</head>
+<body>
+
+
+    <!-- Add a video - normal method
+    <video src="videos/Broken_angel.mp4" width="500px" controls>  
+        -->
+
+     <!-- Video With a backup file-->
+    <video width="500px" controls autoplay muted loop id="video">
+        <source src="videos/Broken_angel.mp4" type="video/mp4">
+        <source src="videos/Broken_angel.webm" type="video/webm">
+    </video>
+    
+</body>
+</html>

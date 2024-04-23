@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/Favicon.png">
+    <title>Lyrics</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap" rel="stylesheet">
+
+    <style>
+        #bold{
+            border: 3px solid hsl(262, 100%, 56%);
+            /* above code can be also written as below
+            border-style: solid;
+            border-width: 3px;
+            border-color: rgb(105, 1, 1);*/
+            border-radius: 20px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .aligncenter {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .song{
+            font-family: "Playwrite US Modern";
+            font-style: oblique
+            ;
+            margin:30px;
+            padding: 25px;
+
+            
+            color: rgb(255, 255, 255); /*RGB value*/
+            text-shadow: 5px 5px 10px #000000, -5px -5px 15px #000000;
+            
+
+            border-bottom: 4px dotted #4c19aa;
+            border-top: 4px dotted rgb(164, 25, 169);
+            border-left: 4px dotted hsl(226, 76%, 31%);
+            border-right: 4px dotted hwb(145 3% 47%);
+
+            border-radius: 20px;
+        }
+
+        body{
+            background-image: url(images/Background-img-mountain.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed; /* stop background image scrolling*/ 
+            background-size:cover;
+            content: "banana";
+        }
+       
+    </style>
+    
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="Index.html"  title="To main page"> Main page </a></li>
+            <li><a href="Lyrics.html"  title="Lyrics" class="activeNav"> Lyrics </a></li>
+            <li><a href="table.html"  title="To Table"> Table </a></li>
+            <li><a href="Button.html"  title="To Button"> Button </a></li>
+            <li><a href="form.html"  title="To form"> Form </a></li>
+        </ul>
+    </nav>
+ 
+    <h1 id="lyricsTopic">Broken angel</h1>
+    <br>
+    <div  class="aligncenter">
+        <a href="video.html">
+            <!-- onerror - add backup photo -->
+            <img src="/images/broken_angel.jpg" width="250" alt="Broken angel" onerror="this.onerror=null; this.src='/images/broken_angel.webp'">
+            <h3>Watch video</h3>
+        </a>
+    </div>
+    <br>
+
+    <audio controls muted loop>
+        <source src = "audio/Broken_Angel.mp3" type="audio/mpeg">
+    </audio>
+        
+    <p id="lyrics1" class="song">I'm so lonely broken angel I'm so lonely listen to my heart
+    </p>
+    <pre class="song"> <!-- Preformatted text-->
+        dooset daram:
+        be cheshme man gerye nade:
+        na, nemitoonam:
+        bedoone to halam bade
+
+        I'm so lonely broken angel
+        I'm so lonely listen to my heart
+        On n' lonley, broken angel
+        Come n' save me before I fall apart
+
+        To harja ke bashi kenaretam:
+        ta akharesh divoonatam
+        to, to nemidooni, ke joonami, bargard pisham
+        I'm so lonely broken angel
+
+        I'm so lonely listen to my heart
+        On n' lonley, broken angel
+        Come n' save me before I fall apart
+        I'm so lonely broken angel
+
+        I'm so lonely listen to my heart
+        On n' lonley, broken angel
+        Come n' save me before I fall apart
+    </pre>
+    </body>
+</html>

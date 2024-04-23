@@ -1,0 +1,158 @@
+/* add loacally installed font*/
+@font-face{
+    src:url(fonts/Kanit-Light.ttf);
+    font-family: Kanit Light; /*can rename the font here*/
+} 
+body{
+    margin: 0px;
+    background-color: hsl(0, 0%, 100%); /*HSL value */  /* don't forget % marks*/
+}
+
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* add by class*/
+.clr{
+    color: blueviolet; /* by color name*/
+    font-family: "Kanit light";
+    font-weight: bold;
+    font-size: medium;
+    font-style: italic;
+
+    text-shadow: 3px 3px 15px #ff0000;
+    /* 3px for horizontal, 3px for vertical, 15px for blur */ 
+}
+
+/*Add css by id*/
+#para2{
+    color: #1d8325; /* hexadecimal value*/
+}
+/* by id < by class < other methods*/
+
+/* using font by API*/
+#lyrics1{
+    font-family: "Playwrite US Modern";
+}
+
+p::selection, pre::selection{ /* apply to multiple classes*/
+    color: #ff0000;
+    background-color: black;
+}
+
+
+.pagination{
+    text-align: center;
+}
+
+.pagination a{
+    text-decoration: none; /* remove underline of <a> */
+    color: black;
+    
+    padding: 8px 16px;
+    display: inline-block; /* (easy to adjust - like width & hieght) makes an element behave like an inline element but allows it to have block-level properties like width, height, margins, and padding. */
+
+}
+
+/*  .pagination a#active{   active id in pagination class
+.pagination a.active{  active class in pagination class*/
+.pagination a#active{ 
+    background-color: rgb(255, 90, 90);
+    font-weight: bold; /**/
+    border-radius: 5px;
+}
+
+/* apply <a>'s of pagination class,
+but not id - active */
+.pagination a:hover:not(#active){
+    background-color: #2c2c2c;
+    color: rgb(255, 90, 90);
+    border-radius: 5px;
+}
+
+.pagination a:not(#active){
+    background-color: #d3d3d3;
+    border-radius: 5px;
+}
+
+
+.dropdown{
+    display: inline-block;
+}
+
+.dropdown button{
+    background-color: hsl(0, 0%, 71%);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor:pointer; /* change mouse cursor icon */
+}
+.dropdown a{
+    display: block; /* changee view to vertical */
+    text-decoration: none; /* remove underline */
+    color: black;
+    padding: 10px 15px;
+}
+
+.dropdown .content{
+    display: none; /** hide contain (till hover on) */
+    position: absolute; 
+    min-width: 100px;
+    background-color: #dfdfdf;
+    box-shadow: 2px 2px 5px black; /* color:black; is wrong */
+}
+
+.dropdown:hover .content{
+    display: block;
+}
+
+.dropdown:hover button{
+    background-color: #505050;
+}
+
+.dropdown a:hover{
+    background-color: hsl(0, 0%, 75%);
+}
+
+
+
+.navbar ul{
+    list-style-type: none;  /* remove bullet points of <ul> */
+    overflow: hidden; /* to keep space for nav bar */
+    background-color: hsl(0, 0%, 25%);
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.navbar a{
+    display: block; 
+    text-decoration: none;
+    color: aliceblue;
+    padding: 15px;
+    text-align: center; /* need for mobile view */
+    
+}
+
+ul li{
+    float: left; /* make navbar horizontal */
+} 
+
+li a:hover:not(.activeNav){
+    background-color: hsl(0, 0%, 10%);
+}
+
+li .activeNav:hover{
+    background-color: hsl(239, 100%, 10%);
+}
+.activeNav{
+    background-color: hsl(239, 100%, 27%);
+}
+
+@media screen and (max-width: 600px){ /* don't forget space */
+     
+     .navbar li{
+        width: 100%; /* when width is 100%,  elements sets in vertical order */
+     }
+}
